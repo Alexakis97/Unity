@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 94950600}
   - component: {fileID: 94950599}
   - component: {fileID: 94950598}
+  - component: {fileID: 94950603}
   m_Layer: 0
   m_Name: Domino Oven
   m_TagString: Untagged
@@ -407,7 +408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94950597}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 46, y: 9, z: 17.2}
+  m_LocalPosition: {x: -27.31, y: 9, z: 7.18}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 588546959}
@@ -422,6 +423,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!54 &94950603
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94950597}
+  serializedVersion: 2
+  m_Mass: 15
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &193021308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1701,7 @@ Transform:
   m_GameObject: {fileID: 438158618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.52, y: -1.1, z: -17.95}
-  m_LocalScale: {x: -198.32054, y: 0.014325775, z: 243.33391}
+  m_LocalScale: {x: -192.37688, y: 0.014325775, z: 243.33391}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1882,7 +1899,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504831073}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 16.6, y: 8.6, z: -23.9}
+  m_LocalPosition: {x: 94.2, y: 8.6, z: -23.9}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 1258235658}
@@ -2272,7 +2289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612805417}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 31.3, y: 8.7, z: 17.3}
+  m_LocalPosition: {x: 60.4, y: 8.7, z: -176.93}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 2067348088}
@@ -2479,7 +2496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665145499}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.5, y: 8.7, z: -24.6}
+  m_LocalPosition: {x: 77.1, y: 8.7, z: -24.6}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 202979794}
@@ -2617,7 +2634,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2872,6 +2889,7 @@ GameObject:
   - component: {fileID: 804803024}
   - component: {fileID: 804803023}
   - component: {fileID: 804803022}
+  - component: {fileID: 804803027}
   - component: {fileID: 804803026}
   m_Layer: 0
   m_Name: Domino Clock
@@ -2948,7 +2966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804803021}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -27.6, y: 8.7, z: 17.5}
+  m_LocalPosition: {x: -27.6, y: 8.7, z: 31.96}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 1978445947}
@@ -2967,9 +2985,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 804803021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb95c2546f924143b9096e0fea98950, type: 3}
+  m_Script: {fileID: 11500000, guid: cb79738a07b016144a1bf3c249fea181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 804803027}
+--- !u!54 &804803027
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804803021}
+  serializedVersion: 2
+  m_Mass: 15
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &813570742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,7 +3198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817061428}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.3, y: 8.7, z: 17.9}
+  m_LocalPosition: {x: 81.2, y: 8.7, z: -176.33}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 967720787}
@@ -3437,13 +3472,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.36049104, y: -0.0044608284, z: -0.0007545539, w: 0.9327517}
-  m_LocalPosition: {x: 7.13, y: 53.22, z: -57.79}
+  m_LocalRotation: {x: 0.20076184, y: 0.42658877, z: -0.111111894, w: 0.8748548}
+  m_LocalPosition: {x: -56, y: 21, z: -8.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 42.260002, y: -0.68600005, z: -0.358}
+  m_LocalEulerAnglesHint: {x: 26.492, y: 51.640003, z: -1.4810001}
 --- !u!1 &967720786
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,7 +4832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 21.787, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1999998, y: 20.60024}
+  m_AnchoredPosition: {x: 78.8, y: 20.60024}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1316053326
@@ -4993,7 +5028,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316053326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 16.63}
+  m_LocalPosition: {x: 0, y: 0, z: -59.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5001,7 +5036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.9, y: 25.2}
+  m_AnchoredPosition: {x: 78.1, y: 25.2}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1319740966
@@ -6280,6 +6315,7 @@ GameObject:
   - component: {fileID: 1954202842}
   - component: {fileID: 1954202841}
   - component: {fileID: 1954202840}
+  - component: {fileID: 1954202845}
   m_Layer: 0
   m_Name: Domino TV
   m_TagString: Untagged
@@ -6367,7 +6403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954202839}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -12.6, y: 8.6, z: 17.6}
+  m_LocalPosition: {x: -26.4, y: 8.6, z: 19.15}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 2002165357}
@@ -6378,6 +6414,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!54 &1954202845
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954202839}
+  serializedVersion: 2
+  m_Mass: 15
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1954890830
 GameObject:
   m_ObjectHideFlags: 0
@@ -6637,7 +6689,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985467529}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17, y: 8.7, z: 17.7}
+  m_LocalPosition: {x: 98.2, y: 8.7, z: -176.53}
   m_LocalScale: {x: 2.2673485, y: 17.978027, z: 8.3666}
   m_Children:
   - {fileID: 513071206}
